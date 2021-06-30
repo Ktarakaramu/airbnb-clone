@@ -1,0 +1,42 @@
+.header {
+  display: flex; /*it keeps all the icons in same row*/
+  justify-content: space-between; /*evenly gives space between UI elements*/
+  align-items: center;
+  position: sticky; /*Header will stsict there it will never move*/
+  top: 0;
+  background-color: white;
+  z-index: 100; /*It will be the top most layer of app, rest will be behind this layer*/
+  width: 100%;
+}
+
+.header__icon {
+  object-fit: contain;
+  height: 100px;
+  margin-left: 20px;
+}
+
+.header__center {
+  display: flex;
+  align-items: center; /* keeps all the items in a line*/
+  flex: 1; /*It covered all the in-between space for this element*/
+  max-width: fit-content;
+  padding: 10px;
+  height: 30px;
+  border-radius: 999px;
+  border: 1px solid lightgrey;
+}
+.header__center > input {
+  /*Only to target single element in a class*/
+  border: none;
+  padding: 10px;
+  outline-width: 0;
+  width: 250px;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 15vw; /*Use 15% of device width*/
+  margin-right: 80px;
+}
